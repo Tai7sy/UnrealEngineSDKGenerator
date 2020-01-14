@@ -4,8 +4,11 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <filesystem>
+#if _HAS_CXX17
+namespace fs = std::filesystem;
+#else
 namespace fs = std::experimental::filesystem;
-
+#endif
 #include "GenericTypes.hpp"
 
 class Package

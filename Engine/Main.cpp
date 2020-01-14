@@ -10,7 +10,11 @@
 #include <chrono>
 #include <filesystem>
 #include <bitset>
+#if _HAS_CXX17
+namespace fs = std::filesystem;
+#else
 namespace fs = std::experimental::filesystem;
+#endif
 #include "cpplinq.hpp"
 
 #include "Logger.hpp"

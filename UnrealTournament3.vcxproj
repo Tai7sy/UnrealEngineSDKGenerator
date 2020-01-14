@@ -14,19 +14,19 @@
     <ProjectGuid>{41C536B5-2F0E-4232-8D0E-4B3CD17F69BB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>UnrealTournament3</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -61,6 +61,7 @@
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;UNREALENGINESDKGENERATOR_EXPORTS;NOMINMAX;WIN32_LEAN_AND_MEAN;UNREALENGINE_VERSION=0300;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)%(RelativeDir)\</ObjectFileName>
       <AdditionalIncludeDirectories>.\Engine;.\Engine\UE3</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -78,6 +79,7 @@
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;UNREALENGINESDKGENERATOR_EXPORTS;NOMINMAX;WIN32_LEAN_AND_MEAN;UNREALENGINE_VERSION=0300;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)%(RelativeDir)\</ObjectFileName>
       <AdditionalIncludeDirectories>.\Engine;.\Engine\UE3</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
